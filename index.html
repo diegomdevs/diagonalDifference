@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Diagonal Difference of a Matrix
+        </h1>
+        <p>
+            by
+        </p>
+        <h2>
+            diegodevs
+        </h2>
+        <div>
+
+        </div>
+    </header>
+    <main>
+        <form action="submit">
+            <label for="">Enter the numbers of the first row: </label>
+            <input type="text" placeholder="1, 2, 3" id="firstRow">
+            <label for="">Enter the numbers of the second row: </label>
+            <input type="text" placeholder="1, 2, 3" id="secondRow">
+            <label for="">Enter the numbers of the third row: </label>
+            <input type="text" placeholder="1, 2, 3" id="thirdRow">
+            <button onclick="handleClick()" type="button" id="submit">Submit</button>
+            <section>
+                <h1 id="result"></h1>
+            </section>
+        </form>
+    </main>
+    <script src="../src/index.js"></script>
+    <style>
+        body {
+        height: 100vh;
+        height: 100%;
+        margin: 0;
+        font-family: 'Varela Round', sans-serif;
+    }
+
+    header {
+        height: 17vh;
+        margin-top: 20px;
+        width: 100%;
+        text-align: center;
+    }
+    header h1 {
+        font-size: 28px;
+        font-weight: bold;
+        margin: 0;
+    }
+    header p {
+        font-size: 15px;
+        font-weight: bold;
+        margin: 0;
+    }
+    header h2 {
+        font-size: 15px;
+        font-weight: bold;
+        margin: 0;
+    }
+    main {
+        height: 80vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;        
+    }
+    main form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        height: 80vh;
+        width: 270px;
+        align-self: center;
+        
+    }
+    main form label {
+        margin: 20px;
+    }
+    main form input {
+        background-color: #f5f5f5;
+        border: none;
+        border-radius: 8px;
+        height: 30px;
+        font-size: var(--md);
+        padding: 6px;
+        margin-bottom: 12px;
+        width: 90%;
+    }
+    main form section {
+        width: 100%;
+        margin-top: 20px;
+        height: 15px;
+    }
+    button {
+        align-self: stretch;
+        color: white;
+        font-weight: bold;
+        height: 30px;
+        border: none;
+        border-radius: 20px;
+        background-color: rgb(20, 230, 160);
+    }
+    #result {
+        font-size: 15px;
+        font-weight: bold;
+        margin: 0;
+        text-align: center;
+        color: rgb(71, 74, 255);
+    }
+    </style>
+</body>
+</html>
