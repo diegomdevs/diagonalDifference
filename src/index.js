@@ -1,10 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Layout from './containers/Layout'
+import Layout from './containers/Layout';
+import useInitialState from '@hooks/useInitialState';
+import AppContext from '@context/AppContext';
 
 const App = () => {
+    const initialState = useInitialState();
     return (
-        <Layout />
+        <AppContext.Provider value={initialState}>
+            <Layout />
+        </AppContext.Provider>
     );
 };
 

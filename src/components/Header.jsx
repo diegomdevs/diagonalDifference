@@ -1,6 +1,5 @@
 import React from 'react';
-import '@styles/Header.css';
-
+import '@styles/Header.scss';
 const Header = () => {
     return (
         <header className="Header">
@@ -10,7 +9,7 @@ const Header = () => {
             <p className="Header-p">
                 by
             </p>
-            <h2 className="">
+            <h2 className="Header-h2">
                 diegodevs
             </h2>
             <div>
